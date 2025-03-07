@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaTech Conference Portugal</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">InovaTech</a>
+            <div class="nav-links">
+                <a href="#speakers">Oradores</a>
+				<a href="horario.html">Consultar Conferências</a>
+                <a href="Viagens.html">Planeamento de Viagem</a>
+                <a href="nova_conferencia.html">Nova conferencia</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="login.html" class="btn-primary">Sign In</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="lucide-menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="travel" class="travel-planner">
+        <div class="container">
+            <h2>Planeamento de Viagem</h2>
+            <p class="section-desc">Deixe-nos ajudá-lo a planear a sua viagem a Portugal para a conferência</p>
+            
+            <div class="travel-form">
+                <div class="form-group">
+                    <label for="origin-country">Seu país</label>
+                    <select id="origin-country" class="form-control">
+                        <option value="">Selecione seu país</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                        <option value="ES">Spain</option>
+                        <option value="IT">Italy</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="BE">Belgium</option>
+                        <option value="SE">Sweden</option>
+                        <option value="DK">Denmark</option>
+                        <option value="IE">Ireland</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="arrival-date">Data de chegada</label>
+                    <input type="date" id="arrival-date" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="departure-date">Data de partida</label>
+                    <input type="date" id="departure-date" class="form-control">
+                </div>
+
+                <button id="plan-trip" class="btn-primary">Planeje a minha viagem</button>
+            </div>
+
+            <div id="travel-results" class="travel-results">
+                <div class="travel-step flight hidden">
+                    <h3>Opções de voo</h3>
+                    <div class="options-container"></div>
+                </div>
+
+                <div class="travel-step accommodation hidden">
+                    <h3>Opções de acomodação</h3>
+                    <div class="options-container"></div>
+                </div>
+
+                <div class="travel-step local-transport hidden">
+                    <h3>Transporte Local</h3>
+                    <div class="options-container"></div>
+                </div>
+
+                <div class="travel-map hidden">
+                    <h3>Sua jornada para a conferência</h3>
+                    <div id="journey-map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Inovatech 2025</h3>
+                    <p>Reunindo as mentes mais brilhantes da tecnologia</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <a href="#schedule">Conferencias</a>
+                    <a href="#speakers">Oradores</a>
+                    <a href="#blog">Blog</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>contato@inovatech.com</p>
+                    <p>+351 123-456-789</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="lucide-twitter"></i></a>
+                        <a href="#"><i class="lucide-linkedin"></i></a>
+                        <a href="#"><i class="lucide-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Inovatch. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

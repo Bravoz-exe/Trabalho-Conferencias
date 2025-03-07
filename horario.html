@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaTech Conference Portugal</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">InovaTech</a>
+            <div class="nav-links">
+				<a href="#speakers">Oradores</a>
+				<a href="horario.html">Consultar Conferências</a>
+                <a href="Viagens.html">Planeamento de Viagem</a>
+                <a href="nova_conferencia.html">Nova conferencia</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="login.html" class="btn-primary">Sign In</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="lucide-menu"></i>
+            </button>
+        </div>
+    </nav>
+
+
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Programação da Conferência</h2>
+            <div class="schedule-tabs">
+
+            </div>
+            <div class="schedule-grid">
+				<div class="conference-actions">
+			<a href="conferencia_detalhes.php?id=<?= $conferencia['id'] ?>" class="btn-details">Ver mais</a>
+
+
+            </div>
+        </div>
+    </section>
+
+  
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>TechConf 2025</h3>
+                    <p>Reunindo as mentes mais brilhantes da tecnologia</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <a href="#schedule">Conferencias</a>
+                    <a href="#speakers">Oradores</a>
+                    <a href="#blog">Blog</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>contato@inovatech.com</p>
+                    <p>+351 123-456-789</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="lucide-twitter"></i></a>
+                        <a href="#"><i class="lucide-linkedin"></i></a>
+                        <a href="#"><i class="lucide-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Inovatch. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaTech Conference Portugal</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">InovaTech</a>
+            <div class="nav-links">
+				<a href="#speakers">Oradores</a>
+				<a href="horario.html">Consultar Conferências</a>
+                <a href="Viagens.html">Planeamento de Viagem</a>
+                <a href="nova_conferencia.html">Nova conferencia</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="login.html" class="btn-primary">Sign In</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="lucide-menu"></i>
+            </button>
+        </div>
+    </nav>
+
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informação do Contato</h3>
+                    <p><i class="lucide-mail"></i> contato@inovatech.com</p>
+                    <p><i class="lucide-phone"></i>+351 123-456-789</p>
+                </div>
+          <form class="contact-form" action="enviar_email.php" method="POST">
+
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Messagem</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Menssagem</button>
+					
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>TechConf 2025</h3>
+                    <p>Reunindo as mentes mais brilhantes da tecnologia</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <a href="#schedule">Conferencias</a>
+                    <a href="#speakers">Oradores</a>
+                    <a href="#blog">Blog</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>contato@inovatech.com</p>
+                    <p>+351 123-456-789</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="lucide-twitter"></i></a>
+                        <a href="#"><i class="lucide-linkedin"></i></a>
+                        <a href="#"><i class="lucide-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Inovatch. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
